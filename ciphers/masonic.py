@@ -1,5 +1,5 @@
 """
-Masonic Cipher -  Enkriptimi
+Masonic Cipher -  Enkriptimi dhe Dekriptimi i Tekstit
 """
 
 class MasonicCipher:
@@ -22,18 +22,22 @@ class MasonicCipher:
 
         for l, s in zip(g1_letters, g1_symbols):
             self.encrypt_map[l] = s
+            self.decrypt_map[s] = l
         for l, s in zip(g2_letters, g2_symbols):
             self.encrypt_map[l] = s
+            self.decrypt_map[s] = l
         for l, s in zip(g3_letters, g3_symbols):
             self.encrypt_map[l] = s
+            self.decrypt_map[s] = l
 
         self.encrypt_map[' '] = ' '
-
+        self.decrypt_map[' '] = ' '
     # Enkriptimi
     def encrypt(self, text):
         return ' '.join(self.encrypt_map.get(ch.upper(), ch) for ch in text)
-
-
+    # Dekriptimi
+def decrypt(self, text): 
+    return ''.join(self.decrypt_map.get(sym, sym) for sym in text.split())
 # Testimi 
 if __name__ == "__main__":
     cipher = MasonicCipher()
@@ -41,6 +45,8 @@ if __name__ == "__main__":
     tekst = "programim ne python"
 
     enc = cipher.encrypt(tekst)
+    dec = cipher.decrypt(enc)
 
     print("Teksti:", tekst)
     print("Enkriptuar:", enc)
+    print("Dekriptuar:", dec)
