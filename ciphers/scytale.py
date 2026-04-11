@@ -20,4 +20,4 @@ class ScytaleCipher:
         return result
 # if __name__ == "__main__":
 #     cipher = ScytaleCipher(3)
-#     print(cipher.encrypt("HELLO WORLD"))
+#     print(cipher.encrypt("hello world"))

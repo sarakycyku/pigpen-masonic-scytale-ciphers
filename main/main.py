@@ -1,3 +1,4 @@
+from ciphers.scytale import ScytaleCipher
 def main():
     print("=" * 40)
     print("ALGORITME KLASIKE TE ENKRIPTIMIT")
