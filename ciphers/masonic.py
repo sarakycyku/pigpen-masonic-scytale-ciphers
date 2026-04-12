@@ -38,15 +38,3 @@ class MasonicCipher:
     # Dekriptimi
 def decrypt(self, text): 
     return ''.join(self.decrypt_map.get(sym, sym) for sym in text.split())
-# Testimi 
-if __name__ == "__main__":
-    cipher = MasonicCipher()
-
-    tekst = "programim ne python"
-
-    enc = cipher.encrypt(tekst)
-    dec = cipher.decrypt(enc)
-
-    print("Teksti:", tekst)
-    print("Enkriptuar:", enc)
-    print("Dekriptuar:", dec)
