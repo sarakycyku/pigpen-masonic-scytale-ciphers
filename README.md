@@ -72,7 +72,13 @@ Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne ko
 ## 3.Shembuj te rezultateve
 #### 1. Pigpen Cipher
 #### 2. Scytale Transposition
-Per algoritmin scytale si tekst marrim "This is a scytale transposition example" prej te ciles largohen hapesirat dhe behen te gjitha uppercase letters "THISISASCYTALETRANSPOSITIONEXAMPLE" nese numri i rreshtave eshte 10 dhe gjatesia e tektit eshte 35 atehere numri i kolonave do te jete 35/10 =3.5=4 kolona dhe do te fitohet matrica :
+Per algoritmin scytale si tekst marrim "This is a scytale transposition example" prej te ciles largohen hapesirat dhe  te gjitha shkronjat shnderrohen ne  uppercase. 
+
+"THISISASCYTALETRANSPOSITIONEXAMPLE" nese numri i rreshtave eshte 10 dhe gjatesia e tektit eshte 35 atehere numri i kolonave do te jete 35/10 =3.5=4 kolona dhe do
+
+te fitohet matrica :
+
+```
 T H I S
 I S A S
 C Y T A
@@ -83,9 +89,10 @@ I O N E
 X A M P
 L E X X
 X X X X
+```
 dhe teksti i enkriptuar eshte:TICLAOIXLXHSYENSOAEXIATTSINMXXSSARPTEPXX
-edhe matica per dekriptim do te jete e njejte
-dhe teskti i dekriptuar eshte :THISISASCYTALETRANSPOSITIONEXAMPLEXXXXXX
+Edhe matrica per dekriptim do te jete e njejte
+dhe teksti i dekriptuar eshte :THISISASCYTALETRANSPOSITIONEXAMPLEXXXXXX
 <img width="620" height="423" alt="image" src="https://github.com/user-attachments/assets/236ef277-475f-420f-ac1a-b4f1b9e655fc" />
 
 #### 3.Masonic Cipher
