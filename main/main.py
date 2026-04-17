@@ -13,7 +13,7 @@ def valido_shkronja(text):
 
 def main():
     print("=" * 40)
-    print("ALGORITMET KLASIKE Te ENKRIPTIMIT")
+    print("CLASSICAL ENCRYPTION ALGORITHMS")
     print("=" * 40)
     print("1. Pigpen")
     print("2. Scytale")
