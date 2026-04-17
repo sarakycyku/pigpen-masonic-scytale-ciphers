@@ -6,13 +6,15 @@ Sigurohuni qe python eshte i instaluar:
 python --version
 
 Clone the repo:
+
 git clone https://github.com/sarakycyku/pigpen-masonic-scytale-ciphers.git
 cd pigpen-masonic-scytale-ciphers
 
 Run the Program:
+
 python -m main.main
 
-Kur te ekzekutohet programi do te shfaqet nje menu ku duhet te zgjdihni algoritmin me te cilin deshironi te enkriptoni ose te dekriptoni:
+Kur te ekzekutohet programi do te shfaqet nje menu ku duhet te zgjidhni algoritmin me te cilin deshironi te enkriptoni ose te dekriptoni:
 
 ========================================
 CLASSICAL ENCRYPTION ALGORITHMS
@@ -20,41 +22,49 @@ CLASSICAL ENCRYPTION ALGORITHMS
 1. Pigpen
 2. Scytale
 3. Masonic
-4. Exit
+4. Krahaso
+5. Dil
 ========================================
 
-Pasi qe keni zgjedhur algoritmin duhet te zgjedhni si a doni te enkriptoni apo te dekriptoni:
+Pasi te keni zgjedhur algoritmin duhet te zgjidhni nese doni te enkriptoni apo te dekriptoni:
 
 1. Encrypt
 2. Decrypt
 Choose:
 
-Ku enkriptimi e konverton plaintext ne ciphertext me algoritmin qe keni perzgjedhur ndersa dekriptimi e kthen ciphertext ne plaintext.
-
-Nese zgjidhni opsionin 4 programi perfundon ndersa nese zgjidhni 5 ose me shume pragrami shfaq error.
-
-##2.Pershkrimi i algoritmeve
-
-1.Pigpen
-2.Masonic
-3.Scytale transposition
+Ku enkriptimi e konverton plaintext ne ciphertext me algoritmin qe keni perzgjedhur, ndersa dekriptimi e kthen ciphertext ne plaintext.
 
 
-1. Pigpen Cipher është një nga metodat më të vjetra të enkriptimit që është përdorur kryesisht nga organizata sekrete si Freemasons në shekujt e kaluar. Kjo metodë nuk përdor zhvendosje apo riorganizim të shkronjave, por bazohet në zëvendësimin e tyre me simbole grafike.
+Nese zgjidhni opsionin 4 qe eshte Krahaso i cili lejon qe nje tekst i vetem te enkriptohet me te tre algoritmet njekohesisht:
 
-Në këtë algoritëm çdo shkronjë e alfabetit anglez përfaqësohet nga një simbol unik i ndërtuar nga forma gjeometrike si kënde, katrorë dhe pika. Alfabeti zakonisht ndahet në grupe dhe vendoset në struktura të ngjashme me rrjeta (grid), ku çdo pozicion korrespondon me një simbol të caktuar.
+Pigpen Cipher
+Scytale Transposition
+Masonic Cipher
 
-Për enkriptim, mesazhi merret dhe çdo shkronjë zëvendësohet me simbolin përkatës nga tabela Pigpen. Si rezultat, teksti i enkriptuar përbëhet vetëm nga simbole dhe nuk mund të kuptohet lehtë pa njohur sistemin.
+Nese zgjidhni opsionin 5 programi perfundon, ndersa nese zgjidhni opsione tjera te pa vlefshme programi shfaq error.
 
-Dekriptimi funksionon në mënyrë të kundërt: çdo simbol identifikohet dhe kthehet në shkronjën përkatëse duke përdorur të njëjtën tabelë. Pra, çelësi i këtij algoritmi është njohja e lidhjes midis shkronjave dhe simboleve.
+3. Pershkrimi i algoritmeve
+1. Pigpen
+2. Masonic
+3. Scytale transposition
+1. Pigpen Cipher
 
-Ndryshe nga algoritmet e tjera më komplekse, Pigpen Cipher është një metodë e thjeshtë dhe vizuale, që përdoret më shumë për qëllime edukative dhe historike sesa për siguri reale.
+Pigpen Cipher eshte nje nga metodat me te vjetra te enkriptimit qe eshte perdorur kryesisht nga organizata sekrete si Freemasons ne shekujt e kaluar. Kjo metode nuk perdor zhvendosje apo riorganizim te shkronjave, por bazohet ne zevendesimin e tyre me simbole grafike.
 
+Ne kete algoritem cdo shkronje e alfabetit anglez perfaqesohet nga nje simbol unik i ndertuar nga forma gjeometrike si kende, katrore dhe pika. Alfabeti zakonisht ndahet ne grupe dhe vendoset ne struktura te ngjashme me rrjeta (grid), ku cdo pozicion korrespondon me nje simbol te caktuar.
 
-3. Scytale transposition eshte nje nder metodat per me te vjetra per enkriptim ku ne fillim eshte perdoru nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave ketu vetem nderrohet renditja e tyre.
+Per enkriptim, mesazhi merret dhe cdo shkronje zevendesohet me simbolin perkates nga tabela Pigpen. Si rezultat, teksti i enkriptuar perbehet vetem nga simbole dhe nuk mund te kuptohet lehte pa njohur sistemin.
+
+Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet ne shkronjen perkates duke perdorur te njejten tabele. Pra, celesi i ketij algoritmi eshte njohja e lidhjes midis shkronjave dhe simboleve.
+
+Ndryshe nga algoritmet e tjera me komplekse, Pigpen Cipher eshte nje metode e thjeshte dhe vizuale, qe perdoret me shume per qellime edukative dhe historike sesa per siguri reale.
+
+2. Scytale Transposition
+
+Scytale transposition eshte nje nga metodat me te vjetra per enkriptim ku ne fillim eshte perdorur nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave, ketu vetem nderrohet renditja e tyre.
 
 Pajisja perbehet nga nje scytale shkop druri rreth te cilit mbeshtillet nje shirit pergamenti ose lekure ne menyre spirale. Pastaj mesazhi shkruhej ne menyre horizontale pergjate shiritit dhe kur shiriti largohej nga shkopi shkronjat dukeshin te perziera dhe nuk kishin kuptim. Si celes eshte perdorur diametri i shkopit pasi vetem nje shkop me te njejtin diameter mund ta bente dekriptimin e atij mesazhi.
 
-Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numrin e kolonave. Nese teksti nuk e mbushte matricen atehere shtohen karaktere plotesues. Pas kesaj teksti i enkriptuar krijohet duke lexuar karakteret kolone pas kolone.
+Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numrin e kolonave. Nese teksti nuk e mbushte matricen atehere shtohen karaktere plotesuese. Pas kesaj teksti i enkriptuar krijohet duke lexuar karakteret kolone pas kolone.
 
-Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rreshti per te rikthyer mesazhin origjinal.
+Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
