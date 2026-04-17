@@ -2,6 +2,15 @@ from ciphers.scytale import ScytaleCipher
 from ciphers.pigpen import encrypt as pigpen_encrypt, decrypt as pigpen_decrypt
 from ciphers.masonic import MasonicCipher
 
+
+def valido_shkronja(text):
+    # validimi qe teksti ne dy algoritmet me qene vetem shkronja
+    for char in text:
+        if not (char.isalpha() or char.isspace()):
+            return False
+    return True
+
+
 def main():
     print("=" * 40)
     print("ALGORITMET KLASIKE Te ENKRIPTIMIT")
@@ -24,7 +33,7 @@ def main():
             continue
             
         if choice == "1":
-            print("\n PIGPEN CIPHER")
+            print("\nSHIFRA PIGPEN")
             print("1. Enkripto")
             print("2. Dekripto")
             
@@ -33,6 +42,10 @@ def main():
             
             if not text:
                 print("Mesazh i zbrazet!")
+                continue
+            
+            if not valido_shkronja(text):
+                print("Gabim: Lejohen vetem shkronja!")
                 continue
             
             if option == "1":
@@ -58,7 +71,15 @@ def main():
                 print("Mesazh i zbrazet!")
                 continue
             
-            rows = int(input("Numri i rreshtave: ").strip())
+            try:
+                rows = int(input("Numri i rreshtave: ").strip())
+                if rows <= 0:
+                    print("Numri i rreshtave duhet te jete me i madh se 0!")
+                    continue
+            except ValueError:
+                print("Gabim: Duhet te jepni nje numer te plote!")
+                continue
+            
             cipher = ScytaleCipher(rows=rows)
             
             if option == "1":
@@ -82,6 +103,10 @@ def main():
             
             if not text:
                 print("Mesazh i zbrazet!")
+                continue
+            
+            if not valido_shkronja(text):
+                print("Gabim: Lejohen vetem shkronja!")
                 continue
             
             cipher = MasonicCipher()
@@ -108,7 +133,18 @@ def main():
                 print("Mesazh i zbrazet!")
                 continue
             
-            rows = int(input("Numri i rreshtave per Scytale: ").strip())
+            if not valido_shkronja(text):
+                print("Gabim: Lejohen vetem shkronja!")
+                continue
+            
+            try:
+                rows = int(input("Numri i rreshtave per Scytale: ").strip())
+                if rows <= 0:
+                    print("Numri i rreshtave duhet te jete me i madh se 0!")
+                    continue
+            except ValueError:
+                print("Gabim: Duhet te jepni nje numer te plote!")
+                continue
             
             print("\n" + "-" * 40)
             print("REZULTATET:")
@@ -126,6 +162,7 @@ def main():
             print(f"3. MASONIC:   {masonic_result}")
             
             print("-" * 40)
+
 
 if __name__ == "__main__":
     main()
