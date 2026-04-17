@@ -1,4 +1,6 @@
 from ciphers.scytale import ScytaleCipher
+from ciphers.pigpen import encrypt as pigpen_encrypt, decrypt as pigpen_decrypt
+from ciphers.masonic import MasonicCipher
 
 def main():
     print("=" * 40)
@@ -19,7 +21,28 @@ def main():
         if choice not in ["1", "2", "3"]:
             print("Invalid choice!")
             continue
-        
+        if choice == "1":
+            print("PIGPEN CIPHER")
+            print("1. Encrypt")
+            print("2. Decrypt")
+            
+            option = input("Select option: ").strip()
+            text = input("Enter the text:").strip()
+            
+            if not text:
+                print("Empty message!")
+                continue
+            
+            if option == "1":
+                enc = pigpen_encrypt(text)
+                print("Encrypted:", enc)
+                
+            elif option == "2":
+                dec = pigpen_decrypt(text)
+                print("Decrypted:", dec)
+                
+            else:
+                print("Invalid option!")
         if choice == "2":
             print("SCYTALE TRANSPOSITION CIPHER")
             print("1. Encrypt")
@@ -45,6 +68,29 @@ def main():
                 
             else:
                 print("Invalid option!")
-
+        if choice == "3":
+            print("MASONIC CIPHER")
+            print("1. Encrypt")
+            print("2. Decrypt")
+            
+            option = input("Select option: ").strip()
+            text = input("Enter the text:").strip()
+            
+            if not text:
+                print("Empty message!")
+                continue
+            
+            cipher = MasonicCipher()
+            
+            if option == "1":
+                enc = cipher.encrypt(text)
+                print("Encrypted:", enc)
+                
+            elif option == "2":
+                dec = cipher.decrypt(text)
+                print("Decrypted:", dec)
+                
+            else:
+                print("Invalid option!")
 if __name__ == "__main__":
     main()

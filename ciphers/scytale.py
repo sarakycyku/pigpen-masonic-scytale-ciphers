@@ -40,14 +40,14 @@ class ScytaleCipher:
         return result
 
 
-if __name__ == "__main__":
-    cipher = ScytaleCipher(rows=3)
+# if __name__ == "__main__":
+#     cipher = ScytaleCipher(rows=3)
     
-    tekst = "HELLO WORLD"
+#     tekst = "HELLO WORLD"
     
-    enc = cipher.encrypt(tekst)
-    dec = cipher.decrypt(enc)
+#     enc = cipher.encrypt(tekst)
+#     dec = cipher.decrypt(enc)
     
-    print("Teksti:", tekst)
-    print("Enkriptuar:", enc)
-    print("Dekriptuar:", dec)
+#     print("Teksti:", tekst)
+#     print("Enkriptuar:", enc)
+#     print("Dekriptuar:", dec)

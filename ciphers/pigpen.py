@@ -12,7 +12,7 @@ pigpen = {
     'Y':'○','Z':'●'
 }
 
-'''Kthimi nga simboli në shkronjë '''
+'''Kthimi nga simboli ne shkronje '''
 reverse = {}
 for key, value in pigpen.items():
     reverse[value] = key
@@ -40,11 +40,11 @@ def decrypt(text):
     return result
 
 
-'''Test i thjeshtë'''
-text = input("Shkruaj tekst: ")
+# '''Test i thjeshte'''
+# text = input("Shkruaj tekst: ")
 
-enc = encrypt(text)
-print("Encrypted:", enc)
+# enc = encrypt(text)
+# print("Encrypted:", enc)
 
-dec = decrypt(enc)
-print("Decrypted:", dec)
+# dec = decrypt(enc)
+# print("Decrypted:", dec)
