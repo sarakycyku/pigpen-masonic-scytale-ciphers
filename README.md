@@ -44,7 +44,7 @@ Masonic Cipher
 Nese zgjidhni opsionin 5 programi perfundon, ndersa nese zgjidhni opsione tjera te pa vlefshme programi shfaq error.
 
 ## 2. Pershkrimi i algoritmeve
-##### 1. Pigpen Cipher
+#### 1. Pigpen Cipher
 
 Pigpen Cipher eshte nje nga metodat me te vjetra te enkriptimit qe eshte perdorur kryesisht nga organizata sekrete si Freemasons ne shekujt e kaluar. Kjo metode nuk perdor zhvendosje apo riorganizim te shkronjave, por bazohet ne zevendesimin e tyre me simbole grafike.
 
@@ -56,7 +56,7 @@ Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet
 
 Ndryshe nga algoritmet e tjera me komplekse, Pigpen Cipher eshte nje metode e thjeshte dhe vizuale, qe perdoret me shume per qellime edukative dhe historike sesa per siguri reale.
 
-##### 2. Scytale Transposition
+#### 2. Scytale Transposition
 
 Scytale transposition eshte nje nga metodat me te vjetra per enkriptim ku ne fillim eshte perdorur nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave, ketu vetem nderrohet renditja e tyre.
 
@@ -66,7 +66,27 @@ Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numr
 
 Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
 
-##### 3.Masonic Cipher
+#### 3.Masonic Cipher
 
 
 ## 3.Shembuj te rezultateve
+#### 1. Pigpen Cipher
+#### 2. Scytale Transposition
+Per algoritmin scytale si tekst marrim "This is a scytale transposition example" prej te ciles largohen hapesirat dhe behen te gjitha uppercase letters "THISISASCYTALETRANSPOSITIONEXAMPLE" nese numri i rreshtave eshte 10 dhe gjatesia e tektit eshte 35 atehere numri i kolonave do te jete 35/10 =3.5=4 kolona dhe do te fitohet matrica :
+T H I S
+I S A S
+C Y T A
+L E T R
+A N S P
+O S I T
+I O N E
+X A M P
+L E X X
+X X X X
+dhe teksti i enkriptuar eshte:TICLAOIXLXHSYENSOAEXIATTSINMXXSSARPTEPXX
+edhe matica per dekriptim do te jete e njejte
+dhe teskti i dekriptuar eshte :THISISASCYTALETRANSPOSITIONEXAMPLEXXXXXX
+<img width="620" height="423" alt="image" src="https://github.com/user-attachments/assets/236ef277-475f-420f-ac1a-b4f1b9e655fc" />
+
+#### 3.Masonic Cipher
+
