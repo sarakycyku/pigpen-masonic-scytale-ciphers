@@ -16,15 +16,15 @@ python -m main.main
 
 Kur te ekzekutohet programi do te shfaqet nje menu ku duhet te zgjidhni algoritmin me te cilin deshironi te enkriptoni ose te dekriptoni:
 
-========================================
+
 CLASSICAL ENCRYPTION ALGORITHMS
-========================================
+
 1. Pigpen
 2. Scytale
 3. Masonic
 4. Krahaso
 5. Dil
-========================================
+
 
 Pasi te keni zgjedhur algoritmin duhet te zgjidhni nese doni te enkriptoni apo te dekriptoni:
 
@@ -43,11 +43,8 @@ Masonic Cipher
 
 Nese zgjidhni opsionin 5 programi perfundon, ndersa nese zgjidhni opsione tjera te pa vlefshme programi shfaq error.
 
-3. Pershkrimi i algoritmeve
-1. Pigpen
-2. Masonic
-3. Scytale transposition
-1. Pigpen Cipher
+## 2. Pershkrimi i algoritmeve
+##### 1. Pigpen Cipher
 
 Pigpen Cipher eshte nje nga metodat me te vjetra te enkriptimit qe eshte perdorur kryesisht nga organizata sekrete si Freemasons ne shekujt e kaluar. Kjo metode nuk perdor zhvendosje apo riorganizim te shkronjave, por bazohet ne zevendesimin e tyre me simbole grafike.
 
@@ -59,7 +56,7 @@ Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet
 
 Ndryshe nga algoritmet e tjera me komplekse, Pigpen Cipher eshte nje metode e thjeshte dhe vizuale, qe perdoret me shume per qellime edukative dhe historike sesa per siguri reale.
 
-2. Scytale Transposition
+##### 2. Scytale Transposition
 
 Scytale transposition eshte nje nga metodat me te vjetra per enkriptim ku ne fillim eshte perdorur nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave, ketu vetem nderrohet renditja e tyre.
 
@@ -68,3 +65,8 @@ Pajisja perbehet nga nje scytale shkop druri rreth te cilit mbeshtillet nje shir
 Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numrin e kolonave. Nese teksti nuk e mbushte matricen atehere shtohen karaktere plotesuese. Pas kesaj teksti i enkriptuar krijohet duke lexuar karakteret kolone pas kolone.
 
 Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
+
+##### 3.Masonic Cipher
+
+
+## 3.Shembuj te rezultateve
