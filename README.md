@@ -39,7 +39,19 @@ Nese zgjidhni opsionin 4 programi perfundon ndersa nese zgjidhni 5 ose me shume 
 2.Masonic
 3.Scytale transposition
 
-Scytale transposition eshte nje nder metodat per me te vjetra per enkriptim ku ne fillim eshte perdoru nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave ketu vetem nderrohet renditja e tyre.
+
+1. Pigpen Cipher është një nga metodat më të vjetra të enkriptimit që është përdorur kryesisht nga organizata sekrete si Freemasons në shekujt e kaluar. Kjo metodë nuk përdor zhvendosje apo riorganizim të shkronjave, por bazohet në zëvendësimin e tyre me simbole grafike.
+
+Në këtë algoritëm çdo shkronjë e alfabetit anglez përfaqësohet nga një simbol unik i ndërtuar nga forma gjeometrike si kënde, katrorë dhe pika. Alfabeti zakonisht ndahet në grupe dhe vendoset në struktura të ngjashme me rrjeta (grid), ku çdo pozicion korrespondon me një simbol të caktuar.
+
+Për enkriptim, mesazhi merret dhe çdo shkronjë zëvendësohet me simbolin përkatës nga tabela Pigpen. Si rezultat, teksti i enkriptuar përbëhet vetëm nga simbole dhe nuk mund të kuptohet lehtë pa njohur sistemin.
+
+Dekriptimi funksionon në mënyrë të kundërt: çdo simbol identifikohet dhe kthehet në shkronjën përkatëse duke përdorur të njëjtën tabelë. Pra, çelësi i këtij algoritmi është njohja e lidhjes midis shkronjave dhe simboleve.
+
+Ndryshe nga algoritmet e tjera më komplekse, Pigpen Cipher është një metodë e thjeshtë dhe vizuale, që përdoret më shumë për qëllime edukative dhe historike sesa për siguri reale.
+
+
+3. Scytale transposition eshte nje nder metodat per me te vjetra per enkriptim ku ne fillim eshte perdoru nga Spartanet ne Greqine e lashte per komunikime ushtarake. Te ky algoritem ne vend se te behet zevendesimi i shkronjave ketu vetem nderrohet renditja e tyre.
 
 Pajisja perbehet nga nje scytale shkop druri rreth te cilit mbeshtillet nje shirit pergamenti ose lekure ne menyre spirale. Pastaj mesazhi shkruhej ne menyre horizontale pergjate shiritit dhe kur shiriti largohej nga shkopi shkronjat dukeshin te perziera dhe nuk kishin kuptim. Si celes eshte perdorur diametri i shkopit pasi vetem nje shkop me te njejtin diameter mund ta bente dekriptimin e atij mesazhi.
 
