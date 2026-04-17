@@ -1,3 +1,11 @@
+import os
+import sys
+
+# Ensure the project root (parent of this "main" folder) is on sys.path
+# so imports like `from ciphers...` work when running this script from
+# the `main` directory.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from ciphers.scytale import ScytaleCipher
 from ciphers.pigpen import encrypt as pigpen_encrypt, decrypt as pigpen_decrypt
 from ciphers.masonic import MasonicCipher
@@ -33,7 +41,7 @@ def main():
             continue
             
         if choice == "1":
-            print("\nSHIFRA PIGPEN")
+            print("\nCIPHER PIGPEN")
             print("1. Enkripto")
             print("2. Dekripto")
             
