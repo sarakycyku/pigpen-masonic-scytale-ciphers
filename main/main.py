@@ -4,93 +4,128 @@ from ciphers.masonic import MasonicCipher
 
 def main():
     print("=" * 40)
-    print("CLASSIC ENCRYPTION ALGORITHMS")
+    print("ALGORITMET KLASIKE Te ENKRIPTIMIT")
     print("=" * 40)
     print("1. Pigpen")
     print("2. Scytale")
     print("3. Masonic")
-    print("4. Exit")
+    print("4. Krahaso")
+    print("5. Dil")
     
     while True:
-        choice = input("\nChoose (1-4): ").strip()
+        choice = input("\nZgjidh (1-5): ").strip()
         
-        if choice == "4":
-            print("Goodbye!")
+        if choice == "5":
+            print("Mirupafshim!")
             break
         
-        if choice not in ["1", "2", "3"]:
-            print("Invalid choice!")
+        if choice not in ["1", "2", "3", "4"]:
+            print("Zgjedhje e pavlefshme!")
             continue
-        if choice == "1":
-            print("PIGPEN CIPHER")
-            print("1. Encrypt")
-            print("2. Decrypt")
             
-            option = input("Select option: ").strip()
-            text = input("Enter the text:").strip()
+        if choice == "1":
+            print("\n PIGPEN CIPHER")
+            print("1. Enkripto")
+            print("2. Dekripto")
+            
+            option = input("Zgjidh opsionin: ").strip()
+            text = input("Shkruaj tekstin: ").strip()
             
             if not text:
-                print("Empty message!")
+                print("Mesazh i zbrazet!")
                 continue
             
             if option == "1":
                 enc = pigpen_encrypt(text)
-                print("Encrypted:", enc)
+                print("Enkriptuar:", enc)
                 
             elif option == "2":
                 dec = pigpen_decrypt(text)
-                print("Decrypted:", dec)
+                print("Dekriptuar:", dec)
                 
             else:
-                print("Invalid option!")
-        if choice == "2":
-            print("SCYTALE TRANSPOSITION CIPHER")
-            print("1. Encrypt")
-            print("2. Decrypt")
+                print("Opsion i pavlefshem!")
+                
+        elif choice == "2":
+            print("\n SCYTALE TRANSPOSITION")
+            print("1. Enkripto")
+            print("2. Dekripto")
             
-            option = input("Select option: ").strip()
-            text = input("Enter the text:").strip()
+            option = input("Zgjidh opsionin: ").strip()
+            text = input("Shkruaj tekstin: ").strip()
             
             if not text:
-                print("Empty message!")
+                print("Mesazh i zbrazet!")
                 continue
             
-            rows = int(input("Number of rows: ").strip())
+            rows = int(input("Numri i rreshtave: ").strip())
             cipher = ScytaleCipher(rows=rows)
             
             if option == "1":
                 enc = cipher.encrypt(text)
-                print("Encrypted:", enc)
+                print("Enkriptuar:", enc)
                 
             elif option == "2":
                 dec = cipher.decrypt(text)
-                print("Decrypted:", dec)
+                print("Dekriptuar:", dec)
                 
             else:
-                print("Invalid option!")
-        if choice == "3":
-            print("MASONIC CIPHER")
-            print("1. Encrypt")
-            print("2. Decrypt")
+                print("Opsion i pavlefshem!")
+                
+        elif choice == "3":
+            print("\n MASONIC CIPHER")
+            print("1. Enkripto")
+            print("2. Dekripto")
             
-            option = input("Select option: ").strip()
-            text = input("Enter the text:").strip()
+            option = input("Zgjidh opsionin: ").strip()
+            text = input("Shkruaj tekstin: ").strip()
             
             if not text:
-                print("Empty message!")
+                print("Mesazh i zbrazet!")
                 continue
             
             cipher = MasonicCipher()
             
             if option == "1":
                 enc = cipher.encrypt(text)
-                print("Encrypted:", enc)
+                print("Enkriptuar:", enc)
                 
             elif option == "2":
                 dec = cipher.decrypt(text)
-                print("Decrypted:", dec)
+                print("Dekriptuar:", dec)
                 
             else:
-                print("Invalid option!")
+                print("Opsion i pavlefshem!")
+                
+        elif choice == "4":
+            print("\n" + "=" * 40)
+            print("KRAHASO - Te 3 ALGORITMET")
+            print("=" * 40)
+            
+            text = input("Shkruaj tekstin: ").strip()
+            
+            if not text:
+                print("Mesazh i zbrazet!")
+                continue
+            
+            rows = int(input("Numri i rreshtave per Scytale: ").strip())
+            
+            print("\n" + "-" * 40)
+            print("REZULTATET:")
+            print("-" * 40)
+            
+            pigpen_result = pigpen_encrypt(text)
+            print(f"1. PIGPEN:    {pigpen_result}")
+            
+            scytale_cipher = ScytaleCipher(rows=rows)
+            scytale_result = scytale_cipher.encrypt(text)
+            print(f"2. SCYTALE:   {scytale_result}")
+            
+            masonic_cipher = MasonicCipher()
+            masonic_result = masonic_cipher.encrypt(text)
+            print(f"3. MASONIC:   {masonic_result}")
+            
+            print("-" * 40)
+
 if __name__ == "__main__":
     main()
