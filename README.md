@@ -71,6 +71,47 @@ Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne ko
 
 ## 3.Shembuj te rezultateve
 #### 1. Pigpen Cipher
+Ky program implementon Pigpen Cipher, një metodë klasike enkriptimi që zëvendëson çdo shkronjë me një simbol unik.
+Si funksionon
+Programi përdor dy struktura kryesore:
+pigpen dictionary → për enkriptim (shkronjë ➝ simbol)
+reverse dictionary → për dekriptim (simbol ➝ shkronjë)
+Enkriptimi:
+Funksioni encrypt(text):
+Merr tekstin nga përdoruesi
+E kthen në uppercase (A-Z)
+Çdo shkronjë zëvendësohet me simbolin përkatës
+Simbolet ndahen me hapësira për lehtësi në dekriptim
+✅ Shembull:
+Input:
+
+hello
+
+Output:
+
+┼ ┴ ¬ ¬ ┘
+Dekriptimi:
+Funksioni decrypt(text):
+Merr tekstin e enkriptuar (simbolet)
+I ndan me split() sipas hapësirave
+Çdo simbol kthehet në shkronjën përkatëse
+✅ Shembull:
+Input:
+
+┼ ┴ ¬ ¬ ┘
+
+Output:
+
+HELLO
+Kur programi ekzekutohet, përdoruesi zgjedh:
+1 - Encrypt
+2 - Decrypt
+Nëse zgjedh 1 → fut tekst normal për enkriptim
+Nëse zgjedh 2 → fut tekst të enkriptuar për dekriptim
+Keshtu doket terminali kur te behet RUN kodi
+<img width="987" height="400" alt="image" src="https://github.com/user-attachments/assets/1f14bd76-0c3d-4b80-bc16-296671903186" />
+
+
 #### 2. Scytale Transposition
 Per algoritmin scytale si tekst marrim "This is a scytale transposition example" prej te ciles largohen hapesirat dhe  te gjitha shkronjat shnderrohen ne  uppercase. 
 
