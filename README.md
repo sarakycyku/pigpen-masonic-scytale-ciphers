@@ -67,6 +67,13 @@ Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numr
 Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
 
 #### 3.Masonic Cipher
+Masonic Cipher eshte nje cipher qe perdoret per enkriptim dhe dekriptim te tekstit. Ky algoritem perdor tri rrjeta te ndryshme per te paraqitur te gjitha shkronjat e alfabetit.
+
+Rrjeti i pare perdoret per shkronjat A-I dhe i ka simbolet pa pika. Rrjeti i dyte perdoret per shkronjat J-R dhe i ka te njejtat simbole por me nje pike brenda. Rrjeti i trete perdoret per shkronjat S-Z dhe i ka simbolet diagonale.
+
+Per enkriptim, teksti konvertohet ne shkronja te medha, pastaj cdo shkronje zevendesohet me simbolin perkates. Hapesirat mbeten te pandryshuara dhe simbolet ndahen me hapesira per lehtesi ne dekriptim.
+
+Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet ne shkronjen perkatese duke perdorur te njejten tabele.
 
 
 ## 3.Shembuj te rezultateve
@@ -157,4 +164,34 @@ dhe teksti i dekriptuar eshte :THISISASCYTALETRANSPOSITIONEXAMPLEXXXXXX
 <img width="620" height="423" alt="image" src="https://github.com/user-attachments/assets/236ef277-475f-420f-ac1a-b4f1b9e655fc" />
 
 #### 3.Masonic Cipher
+Per algoritmin Masonic cipher si tekst marrim "HELLO WORLD". Teksti konvertohet ne shkronja te medha dhe hapesirat mbeten te pandryshuara.
 
+"HELLO WORLD" do te thote qe cdo shkronje zevendesohet me simbolin perkates nga rrjete perkatese:
+
+H → ┴ (nga rrjeta 1)
+
+E → ┼ (nga rrjeta 1)
+
+L → ┐• (nga rrjeta 2)
+
+L → ┐• (nga rrjeta 2)
+
+O → ┤• (nga rrjeta 2)
+
+(hapësirë) → (hapësirë)
+
+W → ◢ (nga rrjeta 3)
+
+O → ┤• (nga rrjeta 2)
+
+R → ┘• (nga rrjeta 2)
+
+L → ┐• (nga rrjeta 2)
+
+D → ├ (nga rrjeta 1)
+
+dhe teksti i enkriptuar eshte: ┴ ┼ ┐• ┐• ┤• ◢ ┤• ┘• ┐• ├
+
+Per dekriptim, cdo simbol identifikohet nga tabela dhe kthehet ne shkronjen perkatese. Simbolet ndahen me hapesira dhe hapesirat mbeten hapesira.
+
+Teksti i dekriptuar eshte: HELLO WORLD
