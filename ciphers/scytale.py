@@ -3,6 +3,8 @@ class ScytaleCipher:
         self.rows = rows
 
     def encrypt(self, text):
+        original_length = len(text.replace(" ", ""))
+        
         text = text.replace(" ", "").upper()
 
         while len(text) % self.rows != 0:
@@ -17,9 +19,9 @@ class ScytaleCipher:
                 index = i * cols + j
                 result += text[index]
 
-        return result
+        return result, original_length
 
-    def decrypt(self, text):
+    def decrypt(self, text, original_length):
         text = text.replace(" ", "").upper()
         
         cols = len(text) // self.rows
@@ -37,17 +39,18 @@ class ScytaleCipher:
             for j in range(cols):
                 result += matrix[i][j]
         
+        result = result[:original_length]
         return result
 
 
 # if __name__ == "__main__":
 #     cipher = ScytaleCipher(rows=3)
     
-#     tekst = "HELLO WORLD"
+#     tekst = "EXAMPLE"
     
-#     enc = cipher.encrypt(tekst)
-#     dec = cipher.decrypt(enc)
+#     enc, orig_len = cipher.encrypt(tekst)
+#     dec = cipher.decrypt(enc, orig_len)
     
-#     print("Teksti:", tekst)
+#     print("Teksti origjinal:", tekst)
 #     print("Enkriptuar:", enc)
 #     print("Dekriptuar:", dec)
