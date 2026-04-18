@@ -194,5 +194,7 @@ dhe teksti i enkriptuar eshte: ┴ ┼ ┐• ┐• ┤• ◢ ┤• ┘• �
 
 Per dekriptim, cdo simbol identifikohet nga tabela dhe kthehet ne shkronjen perkatese. Simbolet ndahen me hapesira dhe hapesirat mbeten hapesira.
 
-Teksti i dekriptuar eshte: HELLO WORLD    <img width="606" height="385" alt="Screenshot 2026-04-18 182130" src="https://github.com/user-attachments/assets/8946819d-666a-4974-b45b-2edcb2246b1d" />
+Teksti i dekriptuar eshte: HELLO WORLD    
+<img width="467" height="385" alt="image" src="https://github.com/user-attachments/assets/fdcbf258-8e83-44ee-b553-51e8e460cf01" />
+
 
