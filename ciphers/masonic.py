@@ -5,6 +5,7 @@ Masonic Cipher -  Enkriptimi dhe Dekriptimi i Tekstit
 class MasonicCipher:
     def __init__(self):
         self.encrypt_map = {}
+        self.decrypt_map = {}
         self._build_maps()
 
     def _build_maps(self):
