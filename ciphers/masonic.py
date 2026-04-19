@@ -37,5 +37,5 @@ class MasonicCipher:
     def encrypt(self, text):
         return ' '.join(self.encrypt_map.get(ch.upper(), ch) for ch in text)
     # Dekriptimi
-def decrypt(self, text): 
-    return ''.join(self.decrypt_map.get(sym, sym) for sym in text.split())
+    def decrypt(self, text): 
+        return ''.join(self.decrypt_map.get(sym, sym) for sym in text.split())

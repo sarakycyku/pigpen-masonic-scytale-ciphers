@@ -37,13 +37,13 @@ class ScytaleCipher:
             for j in range(cols):
                 result += matrix[i][j]
         
-        return result
+        return result.rstrip('X')
 
 
 # if __name__ == "__main__":
 #     cipher = ScytaleCipher(rows=3)
     
-#     tekst = "HELLO WORLD"
+#     tekst = "EXAMPLE"
     
 #     enc = cipher.encrypt(tekst)
 #     dec = cipher.decrypt(enc)
