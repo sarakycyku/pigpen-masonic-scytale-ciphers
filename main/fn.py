@@ -1,5 +1,4 @@
 def valido_shkronja(text):
-    """Kontrollon nëse teksti përmban vetëm shkronja (për enkriptim)"""
     for char in text:
         if not (char.isalpha() or char.isspace()):
             return False
@@ -16,43 +15,36 @@ def shfaq_menu():
 
 
 def titull_program():
-    """Shfaq titullin kryesor të programit"""
     print("=" * 30)
     print("ALGORITMET KLASIKE")
     print("=" * 30)
 
 
 def titull_cipher(emri):
-    """Shfaq titullin për cipher specifik"""
     print(f"\n {emri} ")
     print("1. Enkripto")
     print("2. Dekripto")
 
 
 def error_print(msg):
-    """Printon mesazhin e gabimit me të kuqe"""
     print(f"\033[91m{msg}\033[0m")
 
 
 def print_rezultat(tipi, rezultati):
-    """Printon rezultatin (Ciphertext ose Plaintext)"""
     print(f"{tipi}: {rezultati}")
 
 
 def kontrollo_text(text):
-    """Kontrollon nëse teksti është i zbrazët"""
     if not text:
         return False, "Mesazh i zbrazet!"
     return True, None
 
 
 def opsion_i_vlefshem(option, opsionet=["1", "2"]):
-    """Kontrollon nëse opsioni është i vlefshëm"""
     return option in opsionet
 
 
 def numri_rreshtave():
-    """Merr numrin e rreshtave nga përdoruesi me validim"""
     try:
         rows = int(input("Numri i rreshtave: ").strip())
         if rows <= 0:
@@ -63,7 +55,6 @@ def numri_rreshtave():
 
 
 def numri_rreshtave_krahaso():
-    """Merr numrin e rreshtave për krahasim me validim"""
     try:
         rows = int(input("Numri i rreshtave per Scytale: ").strip())
         if rows <= 0:
