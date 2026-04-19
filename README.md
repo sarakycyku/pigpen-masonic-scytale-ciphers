@@ -1,60 +1,59 @@
 # pigpen-masonic-scytale-ciphers
 
-## 1. Ekzekutimi i programit
+Ky eshte nje program per perdorimin e algoritmeve klasike te enkriptimit dhe dekriptimit.Ne menyre qe porgrami te perdoret me lehte perdoret nje menu ku perdoruesi mund te zgjedhe mes disa algoritmeve. 
 
+## 1. Ekzekutimi i programit
+Hape CMD ose Terminal.
 Sigurohuni qe python eshte i instaluar:
-python --version
+
+``python --version``
 
 Clone the repo:
 
-git clone https://github.com/sarakycyku/pigpen-masonic-scytale-ciphers.git
-cd pigpen-masonic-scytale-ciphers
+``git clone https://github.com/sarakycyku/pigpen-masonic-scytale-ciphers.git``
+
+``cd pigpen-masonic-scytale-ciphers``
 
 Run the Program:
 
-python -m main.main
+``python -m main.main``
 
-Kur te ekzekutohet programi do te shfaqet nje menu ku duhet te zgjidhni algoritmin me te cilin deshironi te enkriptoni ose te dekriptoni:
+Kur te ekzekutohet programi do te shfaqet nje menu:
 
 
-CLASSICAL ENCRYPTION ALGORITHMS
+<img width="291" height="244" alt="image" src="https://github.com/user-attachments/assets/fd33ec53-9720-48b9-9a4a-50c51788905a" />
 
-1. Pigpen
-2. Scytale
-3. Masonic
-4. Krahaso
-5. Dil
-
+Prej kesaj menu  duhet te zgjedhni algoritmin me te cilin deshironi te enkriptoni ose te dekriptoni
 
 Pasi te keni zgjedhur algoritmin duhet te zgjidhni nese doni te enkriptoni apo te dekriptoni:
 
-1. Encrypt
-2. Decrypt
-Choose:
+<img width="339" height="362" alt="image" src="https://github.com/user-attachments/assets/a1b8a969-3ada-49d1-9ef7-292d92cb3c45" />
 
-Ku enkriptimi e konverton plaintext ne ciphertext me algoritmin qe keni perzgjedhur, ndersa dekriptimi e kthen ciphertext ne plaintext.
+
+Ku enkriptimi e konverton plaintext ne ciphertext me algoritmin qe keni perzgjedhur ndersa dekriptimi e kthen ciphertext ne plaintext.
 
 
 Nese zgjidhni opsionin 4 qe eshte Krahaso i cili lejon qe nje tekst i vetem te enkriptohet me te tre algoritmet njekohesisht:
 
-Pigpen Cipher
-Scytale Transposition
-Masonic Cipher
+<img width="348" height="390" alt="image" src="https://github.com/user-attachments/assets/028e979f-2f95-44af-ac96-d340a2072262" />
 
-Nese zgjidhni opsionin 5 programi perfundon, ndersa nese zgjidhni opsione tjera te pa vlefshme programi shfaq error.
+
+Nese zgjidhni opsionin 5 programi perfundon ndersa nese zgjidhni opsione tjera te pa vlefshme programi shfaq error.
 
 ## 2. Pershkrimi i algoritmeve
 #### 1. Pigpen Cipher
 
-Pigpen Cipher eshte nje nga metodat me te vjetra te enkriptimit qe eshte perdorur kryesisht nga organizata sekrete si Freemasons ne shekujt e kaluar. Kjo metode nuk perdor zhvendosje apo riorganizim te shkronjave, por bazohet ne zevendesimin e tyre me simbole grafike.
+Pigpen Cipher eshte nje nga metodat me te vjetra te enkriptimit qe eshte perdorur kryesisht nga organizata sekrete si Freemasons ne shekujt e kaluar. Kjo metode nuk perdor zhvendosje apo riorganizim te shkronjave por bazohet ne zevendesimin e tyre me simbole grafike.
 
-Ne kete algoritem cdo shkronje e alfabetit anglez perfaqesohet nga nje simbol unik i ndertuar nga forma gjeometrike si kende, katrore dhe pika. Alfabeti zakonisht ndahet ne grupe dhe vendoset ne struktura te ngjashme me rrjeta (grid), ku cdo pozicion korrespondon me nje simbol te caktuar.
+Ne kete algoritem cdo shkronje e alfabetit anglez perfaqesohet nga nje simbol unik i ndertuar nga forma gjeometrike si kende katrore dhe pika. Alfabeti zakonisht ndahet ne grupe dhe vendoset ne struktura te ngjashme me rrjeta (grid) ku cdo pozicion korrespondon me nje simbol te caktuar.
 
-Per enkriptim, mesazhi merret dhe cdo shkronje zevendesohet me simbolin perkates nga tabela Pigpen. Si rezultat, teksti i enkriptuar perbehet vetem nga simbole dhe nuk mund te kuptohet lehte pa njohur sistemin.
+Per enkriptim mesazhi merret dhe cdo shkronje zevendesohet me simbolin perkates nga tabela Pigpen. Si rezultat teksti i enkriptuar perbehet vetem nga simbole dhe nuk mund te kuptohet lehte pa njohur sistemin.
 
-Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet ne shkronjen perkates duke perdorur te njejten tabele. Pra, celesi i ketij algoritmi eshte njohja e lidhjes midis shkronjave dhe simboleve.
+Te dekiriptimi cdo simbol identifikohet dhe kthehet ne shkronjen perkates duke perdorur te njejten tabele. Pra celesi i ketij algoritmi eshte njohja e lidhjes midis shkronjave dhe simboleve.
 
-Ndryshe nga algoritmet e tjera me komplekse, Pigpen Cipher eshte nje metode e thjeshte dhe vizuale, qe perdoret me shume per qellime edukative dhe historike sesa per siguri reale.
+Ndryshe nga algoritmet e tjera me komplekse Pigpen Cipher eshte nje metode e thjeshte dhe vizuale qe perdoret me shume per qellime edukative dhe historike sesa per siguri reale.
+<img width="1024" height="464" alt="rsirGNhjrGdsKvGfbTVzu37fUieCcTnrACEME71Rifgaxay7IMFEFNTcrM-cxcEsP03CsTqOnN6bf4nG7utS4QWbsGWJsXG5bzNbzZNdCrjkFd7l84phrM-UrsX-8QOAhOoSw4HaL9wfy08kT4IvINe4GAbaEu3IujuNWs3-7ARo72XKeuIUWEBPUQATcny0" src="https://github.com/user-attachments/assets/40d0a003-0b64-4d89-8cd1-4f56a1155bff" />
+
 
 #### 2. Scytale Transposition
 
@@ -64,7 +63,9 @@ Pajisja perbehet nga nje scytale shkop druri rreth te cilit mbeshtillet nje shir
 
 Tek ky algoritem teksti organizohet ne nje matrice dhe celesi i cili tregon numrin e kolonave. Nese teksti nuk e mbushte matricen atehere shtohen karaktere plotesuese. Pas kesaj teksti i enkriptuar krijohet duke lexuar karakteret kolone pas kolone.
 
-Dekriptimi funksionon ne menyre te kundert pra ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
+Ndersa te dekirptimi ciphertext vendoset perseri ne kolona sipas te njejtit celes dhe me pas lexohet rresht pas rresht per te rikthyer mesazhin origjinal.
+
+<img width="347" height="145" alt="download" src="https://github.com/user-attachments/assets/9676e29c-9a26-42f1-aadb-97ec01c88ce1" />
 
 #### 3.Masonic Cipher
 Masonic Cipher eshte nje cipher qe perdoret per enkriptim dhe dekriptim te tekstit. Ky algoritem perdor tri rrjeta te ndryshme per te paraqitur te gjitha shkronjat e alfabetit.
@@ -78,26 +79,24 @@ Dekriptimi funksionon ne menyre te kundert: cdo simbol identifikohet dhe kthehet
 
 ## 3.Shembuj te rezultateve
 #### 1. Pigpen Cipher
-Ky program implementon Pigpen Cipher, një metodë klasike enkriptimi që zëvendëson çdo shkronjë me një simbol unik.
+Ky program implementon Pigpen Cipher nje metode klasike enkriptimi qe zevendeson cdo shkronje me nje simbol unik.
 
 Si funksionon
 
 Programi përdor dy struktura kryesore:
 
-pigpen dictionary → për enkriptim (shkronjë ➝ simbol)
+pigpen dictionary -> per enkriptim (shkronje -> simbol)
 
-reverse dictionary → për dekriptim (simbol ➝ shkronjë)
+reverse dictionary -> per dekriptim (simbol -> shkronje)
 
 Enkriptimi:
 
-Funksioni encrypt(text):
+Mirret teksti nga perdoruesi
+E kthen në uppercase dhe cdo shkronje zevendesohet me simbolin perkates,
+Simbolet ndahen me hapesira per lehtesi ne dekriptim
 
-Merr tekstin nga përdoruesi
-E kthen në uppercase (A-Z),
-Çdo shkronjë zëvendësohet me simbolin përkatës,
-Simbolet ndahen me hapësira për lehtësi në dekriptim
+si shembull eshte:
 
-✅ Shembull:
 Input:
 
 hello
@@ -108,13 +107,10 @@ Output:
 
 Dekriptimi:
 
-Funksioni decrypt(text):
 
-Merr tekstin e enkriptuar (simbolet),
-I ndan me split() sipas hapësirave,
-Çdo simbol kthehet në shkronjën përkatëse,
-
-✅ Shembull:
+Mirret teksti i enkriptuar (simbolet) dhe ndanen me split() sipas hapesirave
+Cdo simbol kthehet ne shkronjen perkatese,
+Shembull:
 
 Input:
 
@@ -130,13 +126,18 @@ Kur programi ekzekutohet, përdoruesi zgjedh:
 
 2 - Decrypt
 
-Nëse zgjedh 1 → fut tekst normal për enkriptim
+Nese zgjedh 1  futet tekst normal per enkriptim
 
-Nëse zgjedh 2 → fut tekst të enkriptuar për dekriptim
+Nese zgjedh 2 futet tekst i enkriptuar per dekriptim
+
+Por ky algoritem enkeripton vetem shkronjat dhe nese jepet nje numer ose ndonej simbol tjeter programi shfaq error
+<img width="368" height="373" alt="image" src="https://github.com/user-attachments/assets/ecba3391-67da-4e0c-8c67-0f5e2a54d0b0" />
+
 
 Keshtu doket terminali kur te behet RUN kodi:
 
-<img width="987" height="400" alt="image" src="https://github.com/user-attachments/assets/1f14bd76-0c3d-4b80-bc16-296671903186" />
+<img width="398" height="482" alt="image" src="https://github.com/user-attachments/assets/061f3ca4-9238-4c6f-b4fa-02c12e53da79" />
+
 
 
 #### 2. Scytale Transposition
@@ -159,42 +160,44 @@ L E X X
 X X X X
 ```
 dhe teksti i enkriptuar eshte:TICLAOIXLXHSYENSOAEXIATTSINMXXSSARPTEPXX
-Edhe matrica per dekriptim do te jete e njejte
-dhe teksti i dekriptuar eshte :THISISASCYTALETRANSPOSITIONEXAMPLEXXXXXX
-<img width="620" height="423" alt="image" src="https://github.com/user-attachments/assets/236ef277-475f-420f-ac1a-b4f1b9e655fc" />
+
+Ndersa gjate dekriptimit padding X qe jane largohen dhe fitohet THISISASCYTALETRANSPOSITIONEXAMPLE
+<img width="563" height="502" alt="image" src="https://github.com/user-attachments/assets/4a2816c3-d8e6-4e69-9655-90ca5196f9d4" />
+
 
 #### 3.Masonic Cipher
 Per algoritmin Masonic cipher si tekst marrim "HELLO WORLD". Teksti konvertohet ne shkronja te medha dhe hapesirat mbeten te pandryshuara.
 
 "HELLO WORLD" do te thote qe cdo shkronje zevendesohet me simbolin perkates nga rrjete perkatese:
 
-H → ┴ (nga rrjeta 1)
+H -> ┴ (nga rrjeta 1)
 
 E → ┼ (nga rrjeta 1)
 
-L → ┐• (nga rrjeta 2)
+L -> ┐• (nga rrjeta 2)
 
-L → ┐• (nga rrjeta 2)
+L -> ┐• (nga rrjeta 2)
 
-O → ┤• (nga rrjeta 2)
+O -> ┤• (nga rrjeta 2)
 
-(hapësirë) → (hapësirë)
+(hapesire) -> (hapesire)
 
-W → ◢ (nga rrjeta 3)
+W -> ◢ (nga rrjeta 3)
 
-O → ┤• (nga rrjeta 2)
+O -> ┤• (nga rrjeta 2)
 
-R → ┘• (nga rrjeta 2)
+R -> ┘• (nga rrjeta 2)
 
-L → ┐• (nga rrjeta 2)
+L -> ┐• (nga rrjeta 2)
 
-D → ├ (nga rrjeta 1)
+D -> ├ (nga rrjeta 1)
 
 dhe teksti i enkriptuar eshte: ┴ ┼ ┐• ┐• ┤• ◢ ┤• ┘• ┐• ├
 
-Per dekriptim, cdo simbol identifikohet nga tabela dhe kthehet ne shkronjen perkatese. Simbolet ndahen me hapesira dhe hapesirat mbeten hapesira.
+Per dekriptim cdo simbol identifikohet nga tabela dhe kthehet ne shkronjen perkatese. Simbolet ndahen me hapesira dhe hapesirat mbeten hapesira.
 
 Teksti i dekriptuar eshte: HELLO WORLD    
-<img width="467" height="385" alt="image" src="https://github.com/user-attachments/assets/fdcbf258-8e83-44ee-b553-51e8e460cf01" />
+<img width="538" height="477" alt="image" src="https://github.com/user-attachments/assets/943b9f39-d7be-41f2-a551-d2c76f221a0b" />
+
 
 
